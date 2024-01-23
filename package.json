@@ -1,11 +1,15 @@
 {
   "name": "rabbitsyntax",
   "displayName": "Rabbit Syntax Highlighting",
-  "publisher": "Rabbit",
+  "publisher": "RabbitTeam",
   "version": "0.1.0",
   "description": "Syntax highlighting for Rabbit language",
   "icon": "images/icon.png",
   "main": "extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/officicalalkhaldi/Rabbit-Syntax-Highlighting.git"
+  },
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -14,18 +18,17 @@
       {
         "id": "rabbit",
         "extensions": [".rabt"],
-        "aliases": ["Rabbit", "rabbit"],
+        "aliases": ["rabbit", "rabbit"],
         "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
-   {
-      "language": "rabbit",
-      "scopeName": "source.rabt",
-      "path": "./syntaxes/rabt.tmLanguage.json"
-   }
-],
-
+      {
+        "language": "rabbit",
+        "scopeName": "source.rabt",
+        "path": "./syntaxes/rabt.tmLanguage.json"
+      }
+    ],
     "themes": [
       {
         "id": "rabbit-theme",
@@ -37,8 +40,8 @@
   },
   "files": [
     "extension.js",
-    "syntaxes/rabbit.tmLanguage.json",
-    "themes/rabbit-theme.json",
+    "syntaxes/rabt.tmLanguage.json",
+    "themes/rabt-theme.json",
     "language-configuration.json"
   ],
   "devDependencies": {

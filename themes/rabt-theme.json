@@ -16,13 +16,37 @@
     {
       "scope": "variable.value.thumb",
       "settings": {
-        "foreground": "#ff8fad"
+        "foreground": "#ff618c"
       }
     },
     {
       "scope": "variable.value.data",
       "settings": {
-        "foreground": "#e86b8c"
+        "foreground": "#f0cb26"
+      }
+    },
+    {
+      "scope":"variable.value.last",
+      "settings": {
+        "foreground": "#fc95b1"
+      }
+    },
+    {
+      "scope": "variable.value.opening",
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "scope": "variable.value.closing",
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#ed9555"
       }
     }
   ]

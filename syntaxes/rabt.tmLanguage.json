@@ -5,9 +5,15 @@
   "fileTypes": ["rabt"],
   "patterns": [
     {
-      "begin": "\\bobject\\b ",
+      "begin": "object",
       "end": ">",
       "name": "meta.object"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#opening"
     },
     {
       "include": "#title"
@@ -16,15 +22,42 @@
       "include": "#thumb"
     },
     {
+      "include": "#last"
+    },
+    {
       "include": "#data"
+    },
+    {
+      "include": "#closing"
     }
   ],
   "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line",
+          "match": "//.*$"
+        },
+        {
+          "begin": "/\\*",
+          "end": "\\*/",
+          "name": "comment.block"
+        }
+      ]
+    },
+    "opening": {
+      "patterns": [
+        {
+          "name": "variable.value.opening",
+          "match": "\\[\\+\\]"
+        }
+      ]
+    },
     "title": {
       "patterns": [
         {
           "name": "variable.value.title",
-          "match": "\"title\":\\s*\"([^\"]+)\""
+          "match": "\"title\"\\s?:\\s?*\"([^\"]+)\""
         }
       ]
     },
@@ -32,7 +65,15 @@
       "patterns": [
         {
           "name": "variable.value.thumb",
-          "match": "\"thumb\":\\s*b\"\\\\x[^\"]+\""
+          "match": "\"thumb\"\\s?:\\s?*\"[a-zA-Z0-9\\\n\\S]*\""
+        }
+      ]
+    },
+    "last": {
+      "patterns": [
+        {
+          "name": "variable.value.last",
+          "match": "\"last\"\\s?:\\s?\"([\\d\\\/]|[\\d-]|[\\d\\\\])*\""
         }
       ]
     },
@@ -40,7 +81,15 @@
       "patterns": [
         {
           "name": "variable.value.data",
-          "match": "\"data\":\\s*b\"\\\\x[^\"]+\""
+          "match": "\"data\"\\s?:\\s?*\"[a-zA-Z0-9\\\n\\S]*\""
+        }
+      ]
+    },
+    "closing": {
+      "patterns": [
+        {
+          "name": "variable.value.closing",
+          "match": "\\[\\-\\]"
         }
       ]
     }
