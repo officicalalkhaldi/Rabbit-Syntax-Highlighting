@@ -1,0 +1,29 @@
+{
+  "name": "Rabbit Theme",
+  "settings": [
+    {
+      "scope": "meta.object",
+      "settings": {
+        "foreground": "#8edbf5"
+      }
+    },
+    {
+      "scope": "variable.value.title",
+      "settings": {
+        "foreground": "#fcbdce"
+      }
+    },
+    {
+      "scope": "variable.value.thumb",
+      "settings": {
+        "foreground": "#ff8fad"
+      }
+    },
+    {
+      "scope": "variable.value.data",
+      "settings": {
+        "foreground": "#e86b8c"
+      }
+    }
+  ]
+}

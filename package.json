@@ -1,0 +1,48 @@
+{
+  "name": "rabbitsyntax",
+  "displayName": "Rabbit Syntax Highlighting",
+  "publisher": "Rabbit",
+  "version": "0.1.0",
+  "description": "Syntax highlighting for Rabbit language",
+  "icon": "images/icon.png",
+  "main": "extension.js",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "rabbit",
+        "extensions": [".rabt"],
+        "aliases": ["Rabbit", "rabbit"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+   {
+      "language": "rabbit",
+      "scopeName": "source.rabt",
+      "path": "./syntaxes/rabt.tmLanguage.json"
+   }
+],
+
+    "themes": [
+      {
+        "id": "rabbit-theme",
+        "label": "Rabbit Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rabt-theme.json"
+      }
+    ]
+  },
+  "files": [
+    "extension.js",
+    "syntaxes/rabbit.tmLanguage.json",
+    "themes/rabbit-theme.json",
+    "language-configuration.json"
+  ],
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "license": "MIT"
+}

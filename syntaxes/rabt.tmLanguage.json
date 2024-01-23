@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Rabbit",
+  "scopeName": "source.rabt",
+  "fileTypes": ["rabt"],
+  "patterns": [
+    {
+      "begin": "\\bobject\\b ",
+      "end": ">",
+      "name": "meta.object"
+    },
+    {
+      "include": "#title"
+    },
+    {
+      "include": "#thumb"
+    },
+    {
+      "include": "#data"
+    }
+  ],
+  "repository": {
+    "title": {
+      "patterns": [
+        {
+          "name": "variable.value.title",
+          "match": "\"title\":\\s*\"([^\"]+)\""
+        }
+      ]
+    },
+    "thumb": {
+      "patterns": [
+        {
+          "name": "variable.value.thumb",
+          "match": "\"thumb\":\\s*b\"\\\\x[^\"]+\""
+        }
+      ]
+    },
+    "data": {
+      "patterns": [
+        {
+          "name": "variable.value.data",
+          "match": "\"data\":\\s*b\"\\\\x[^\"]+\""
+        }
+      ]
+    }
+  }
+}
