@@ -11,8 +11,11 @@
     "url": "https://github.com/officicalalkhaldi/Rabbit-Syntax-Highlighting.git"
   },
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.85.0"
   },
+  "activationEvents": [
+    "onLanguage:rabbit"
+  ],
   "contributes": {
     "languages": [
       {
