@@ -2,7 +2,7 @@
 
 
 <P Align="center">
-  <img src="images/icon@2x.png" />
+  <img src="https://raw.githubusercontent.com/officicalalkhaldi/Rabbit-Syntax-Highlighting/main/images/icon@2x.png" />
 </P>
 
 
@@ -43,7 +43,7 @@
 
 ## Screenshots
 <P Align="center">
-  <img src="images/1.png" />
+  <img src="https://raw.githubusercontent.com/officicalalkhaldi/Rabbit-Syntax-Highlighting/main/images/1.png" />
 </P>
 
 <br> 

@@ -13,15 +13,17 @@
   "engines": {
     "vscode": "^1.85.0"
   },
-  "activationEvents": [
-    "onLanguage:rabbit"
-  ],
   "contributes": {
     "languages": [
       {
         "id": "rabbit",
-        "extensions": [".rabt"],
-        "aliases": ["rabbit", "rabbit"],
+        "extensions": [
+          ".rabt"
+        ],
+        "aliases": [
+          "rabbit",
+          "rabbit"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
